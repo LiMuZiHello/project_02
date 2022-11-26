@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            box-sizing: border-box;
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid black;
+            overflow: hidden;
+            /* background-color: rebeccapurple; */
+            background-image:linear-gradient(270deg,#78f,#f78);
+        }
+        .box .top{
+            width: 100%;
+            height: 210px;
+            display: flex;
+            /* background-color: pink; */
+        }
+        .box .top .left{
+            height: 200px;
+            /* background-color: red; */
+            margin: 5px 2px 0px 5px;
+            flex: 1;
+            padding-right: 8px;
+            border-right: 1px solid black;
+        }
+        .box .top .right{
+            height: 200px;
+            /* background-color: blue; */
+            margin: 5px 5px 0px 2px;
+            flex: 1;
+        }
+        .box .top .left img{
+            width: 100%;
+            height: 100%;
+        }
+        .box .top .right h2{
+            border-bottom:1px dashed  black;
+            padding-bottom: 10px;
+        }
+        .box .top .right h2,h3{
+            margin:8px 10px 0px 10px;
+        }
+        .box .top .right p{
+            /* 缩进两个字符 */
+            text-indent:2em;
+            margin: 0px 5px 0px 5px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        .box .bottom{
+            width: 100%;
+            height: 475px;
+            /* background-color: blue; */
+            border-top: 3px solid black;
+            padding-top: 10px;
+            display: flex;
+        }
+        .box .bottom .left{
+            flex: 1;
+            /* background-color: green; */
+            line-height: 90px;
+            border-right: 2px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .box .bottom .right{
+            flex: 3;
+            /* background-color: red; */
+        }
+        .box .bottom .left p{
+            font-size: 60px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .box .bottom .right table{
+            border-top: 1px solid black;
+            width: 100%;
+            height: 100%;
+            text-align:center;
+            /* margin-left: 10px; */
+            border-collapse:collapse;
+        }
+        .box .bottom .right table thead{
+            
+            height: 50px;
+            width: 100%;
+            /* background-color: pink; */
+            font-size: 20px;
+        }
+        .box .bottom .right table thead,tbody tr{
+            border-bottom: 1px solid black;
+        }
+        .box .bottom .right table tbody tr:hover{
+            background-color: rgba(255,255,255,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 喜欢部分 -->
+        <div class="top">
+            <!-- 右边图片区 -->
+            <div class="left">
+                <a href="javascript:;"><img src="img/红烧肉.png" alt="红烧肉" title="红烧肉"></a>
+            </div>
+            <!-- 左边文字区 -->
+            <div class="right">
+                <h2><a href="javascript:;">菜名:红烧肉</a></h2>
+                <h3>配料:</h3>
+                <p>五花肉,冰糖,生抽,老抽,陈皮,小葱,姜片,八角,干辣椒,香叶,桂皮,大蒜,黄酒,盐适量,干山楂,蜂蜜.</p>
+            </div>
+        </div>
+        <!-- 其他菜系部分 -->
+        <div class="bottom">
+            <!-- 左边部分 -->
+            <div class="left">
+                <p>其</p>
+                <p>它</p>
+                <p>菜</p>
+                <p>名</p>
+            </div>
+            <!-- 右边部分 -->
+            <div class="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>菜品名称</th>
+                            <th>价格</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="javascript:;">爆炒萌王</a></td>
+                            <td><i>50</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">异世界空气</a></td>
+                            <td><i>30</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">异世界水果</a></td>
+                            <td><i>10</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">黑暗料理</a></td>
+                            <td><i>20</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">异世界龙蛋</a></td>
+                            <td><i>100</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">史莱姆炒辣椒</a></td>
+                            <td><i>50</i>元</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:;">托尔的尾巴</a></td>
+                            <td><i>60</i>元</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>软件7班:李鸣</p>
+    </div>
+</body>
+</html>
